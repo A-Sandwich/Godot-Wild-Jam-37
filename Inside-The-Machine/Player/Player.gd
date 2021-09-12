@@ -13,7 +13,8 @@ func _ready():
 func _physics_process(delta):
 	velocity = _determine_velocity(SPEED, velocity)
 	move_and_slide(velocity)
-	trail.add_point(position)
+	trail.Add_Node(global_position)
+	#trail.add_point(position)
 	
 func _determine_velocity(speed, velocity):
 	if Input.is_action_pressed("ui_left"):
