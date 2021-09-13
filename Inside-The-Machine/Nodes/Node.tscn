@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Sprites/Player/Player-Place-Holder.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Nodes/copper.png" type="Texture" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -10,5 +10,6 @@
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 0.02, 0.02 )
+position = Vector2( 0.38483, 0.0962089 )
+scale = Vector2( 0.404826, 0.393281 )
 texture = ExtResource( 1 )
