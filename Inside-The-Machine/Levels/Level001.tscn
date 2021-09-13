@@ -7,9 +7,6 @@
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-layer = 0
-
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 956, 540 )
 z_index = -100
