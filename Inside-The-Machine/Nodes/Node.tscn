@@ -1,15 +1,16 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Sprites/Nodes/copper.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Nodes/copper-real.png" type="Texture" id=1]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 [node name="Node" type="KinematicBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2( 0.5, 0.5 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 0.38483, 0.0962089 )
-scale = Vector2( 0.404826, 0.393281 )
+position = Vector2( -0.0105951, -0.0137945 )
+scale = Vector2( 0.194621, 0.197935 )
 texture = ExtResource( 1 )
