@@ -11,6 +11,7 @@ func _ready():
 	player.position.y = size.y / 2
 	Goal.position.x = (size.x / 8) * 7
 	Goal.position.y = size.y / 2
+	Goal.connect("body_entered", player, "_on_Goal_body_entered")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

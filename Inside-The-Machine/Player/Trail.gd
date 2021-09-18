@@ -6,8 +6,8 @@ var all_nodes = []
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	global_position = Vector2(0,0)
-	#pass
+	default_color = Color(1.0, 0, 0, 1.0)
+
 
 func Add_Node(current_position):
 	if all_nodes.size() == 0 or all_nodes[-1].get_global_position().distance_to(current_position) > 50:
@@ -20,3 +20,10 @@ func Add_Node(current_position):
 			node.position = current_position
 		get_tree().get_root().add_child(node)
 		all_nodes.append(node)
+		
+		add_point(get_parent().position)
+
+
+func Create_line(global_position):
+	pass
+		

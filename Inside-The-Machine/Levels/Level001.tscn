@@ -13,3 +13,5 @@ script = ExtResource( 3 )
 [node name="ParallaxBackground" parent="." instance=ExtResource( 2 )]
 
 [node name="Goal" parent="." instance=ExtResource( 4 )]
+
+[connection signal="body_shape_entered" from="Goal" to="Player" method="_on_Goal_body_shape_entered"]

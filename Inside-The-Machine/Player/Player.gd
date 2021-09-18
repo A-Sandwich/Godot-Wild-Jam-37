@@ -7,8 +7,7 @@ onready var trail = get_node("Trail")
 onready var size = get_node("CollisionShape2D").shape.extents
 
 func _ready():
-	pass
-
+	trail.global_position = global_position
 
 func _physics_process(delta):
 	velocity = _determine_velocity(SPEED, velocity)
@@ -31,3 +30,7 @@ func _determine_velocity(speed, velocity):
 	else:
 		velocity.y = 0
 	return velocity
+
+
+func _on_Goal_body_shape_entered(body_id, body, body_shape, local_shape):
+	trail.Create_line(global_position)

@@ -21,3 +21,6 @@ texture = ExtResource( 2 )
 [node name="Trail" parent="." instance=ExtResource( 3 )]
 z_index = -1
 default_color = Color( 0.4, 0.501961, 1, 0.0470588 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
