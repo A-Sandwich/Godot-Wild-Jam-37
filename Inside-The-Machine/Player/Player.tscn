@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Player/Player-Place-Holder.png" type="Texture" id=2]
 [ext_resource path="res://Player/Trail.tscn" type="PackedScene" id=3]
+[ext_resource path="res://UI/Overlay.tscn" type="PackedScene" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 22.5658, 22.3743 )
@@ -24,3 +25,6 @@ default_color = Color( 0.4, 0.501961, 1, 0.0470588 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+
+[node name="UI" parent="." instance=ExtResource( 4 )]
+visible = false

@@ -3,6 +3,7 @@ extends Node2D
 
 onready var player = get_node("Player")
 onready var Goal = get_node("Goal")
+const BasicEnemy = preload("res://Enemies/BasicEnemy.tscn")
 
 
 func _ready():
@@ -12,8 +13,3 @@ func _ready():
 	Goal.position.x = (size.x / 8) * 7
 	Goal.position.y = size.y / 2
 	Goal.connect("body_entered", player, "_on_Goal_body_entered")
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass

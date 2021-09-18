@@ -4,7 +4,9 @@
 
 [sub_resource type="RectangleShape2D" id=1]
 
-[node name="Node" type="KinematicBody2D"]
+[node name="Node" type="KinematicBody2D" groups=[
+"copper",
+]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2( 0.5, 0.5 )

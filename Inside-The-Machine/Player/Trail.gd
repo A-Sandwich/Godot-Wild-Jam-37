@@ -4,6 +4,12 @@ const NODE = preload("res://Nodes/Node.tscn")
 
 var all_nodes = []
 
+func _ready():
+	# changing scenes doesn't get rid of these nodes for some reason?
+	for entry in get_tree().get_nodes_in_group("copper"):
+		entry.queue_free()
+	all_nodes.clear()
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	default_color = Color(1.0, 0, 0, 1.0)
@@ -20,8 +26,8 @@ func Add_Node(current_position):
 			node.position = current_position
 		get_tree().get_root().add_child(node)
 		all_nodes.append(node)
-		
-		add_point(get_parent().position)
+		#I think I don't understand viewports well enough to get this to work
+		#add_point(get_parent().position)
 
 
 func Create_line(global_position):
