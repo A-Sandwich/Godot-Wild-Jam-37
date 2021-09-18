@@ -7,7 +7,7 @@ onready var trail = get_node("Trail")
 onready var size = get_node("CollisionShape2D").shape.extents
 
 func _ready():
-	position = get_viewport_rect().size / 2
+	pass
 
 
 func _physics_process(delta):
