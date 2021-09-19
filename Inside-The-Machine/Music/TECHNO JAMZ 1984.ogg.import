@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/TECHNO JAMZ 1984.ogg-54cd4da33aa718b85ad1f38ea32a09bf.oggstr"
+
+[deps]
+
+source_file="res://Music/TECHNO JAMZ 1984.ogg"
+dest_files=[ "res://.import/TECHNO JAMZ 1984.ogg-54cd4da33aa718b85ad1f38ea32a09bf.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
