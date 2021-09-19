@@ -14,7 +14,7 @@ func _ready():
 func _spawn_enemy():
 	var enemy = BasicEnemy.instance()
 	_set_speed(enemy)
-	enemy.position = Vector2(_get_coordinate(), _get_coordinate())
+	enemy.position = Vector2(player.position.x + _get_coordinate(), player.position.y + _get_coordinate())
 	get_parent().add_child(enemy)
 
 func _get_coordinate():

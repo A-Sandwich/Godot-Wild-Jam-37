@@ -44,4 +44,11 @@ func _determine_velocity(speed, velocity):
 
 func _on_Goal_body_shape_entered(body_id, body, body_shape, local_shape):
 	print("Player in goal")
+	if get_tree().get_nodes_in_group("data").size() > 0:
+		return
 	trail.Create_line(global_position)
+	$WinUI.visible = true
+	get_tree().paused = true
+
+func obtain_data():
+	print("Got data")

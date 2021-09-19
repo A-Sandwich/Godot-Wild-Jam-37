@@ -7,6 +7,7 @@ func _ready():
 	pass
 
 func _physics_process(delta):
+	
 	if Player == null:
 		print("is null")
 		# try and get the player

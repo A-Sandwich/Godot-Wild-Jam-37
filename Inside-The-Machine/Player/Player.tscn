@@ -1,14 +1,18 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
-[ext_resource path="res://Sprites/Player/Player-Place-Holder.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Player/Player.png" type="Texture" id=2]
 [ext_resource path="res://Player/Trail.tscn" type="PackedScene" id=3]
 [ext_resource path="res://UI/Overlay.tscn" type="PackedScene" id=4]
+[ext_resource path="res://UI/WinUI.tscn" type="PackedScene" id=5]
+[ext_resource path="res://UI/RetryUI.tscn" type="PackedScene" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 22.5658, 22.3743 )
 
-[node name="Player" type="KinematicBody2D"]
+[node name="Player" type="KinematicBody2D" groups=[
+"player",
+]]
 scale = Vector2( 0.5, 0.5 )
 script = ExtResource( 1 )
 
@@ -28,3 +32,16 @@ current = true
 
 [node name="UI" parent="." instance=ExtResource( 4 )]
 visible = false
+
+[node name="WinUI" parent="." instance=ExtResource( 5 )]
+visible = false
+margin_left = -272.0
+margin_top = -440.0
+margin_right = 305.0
+margin_bottom = -188.0
+
+[node name="RetryUI" parent="." instance=ExtResource( 6 )]
+margin_left = -1012.0
+margin_top = -592.0
+margin_right = -880.0
+margin_bottom = -533.0

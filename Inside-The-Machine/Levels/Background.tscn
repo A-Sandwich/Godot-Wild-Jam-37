@@ -1,13 +1,103 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Sprites/Backgrounds/synth-grid-solid.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Backgrounds/synth-grid-faded.png" type="Texture" id=1]
 
 [node name="ParallaxBackground" type="ParallaxBackground"]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="."]
 
-[node name="Sprite" type="Sprite" parent="ParallaxLayer"]
-visible = false
-position = Vector2( 519, 305 )
-scale = Vector2( 0.536458, 0.561111 )
+[node name="TextureRect" type="TextureRect" parent="ParallaxLayer"]
+margin_right = 1920.0
+margin_bottom = 1080.0
+rect_pivot_offset = Vector2( 2242.06, 540 )
 texture = ExtResource( 1 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect2" type="TextureRect" parent="ParallaxLayer"]
+margin_left = -1920.0
+margin_bottom = 1080.0
+rect_pivot_offset = Vector2( 2242.06, 540 )
+texture = ExtResource( 1 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect3" type="TextureRect" parent="ParallaxLayer"]
+margin_left = -1920.0
+margin_top = -1080.0
+rect_pivot_offset = Vector2( 2242.06, 540 )
+texture = ExtResource( 1 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect4" type="TextureRect" parent="ParallaxLayer"]
+margin_left = -1920.0
+margin_top = 1080.0
+margin_bottom = 2160.0
+rect_pivot_offset = Vector2( 2242.06, 540 )
+texture = ExtResource( 1 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect5" type="TextureRect" parent="ParallaxLayer"]
+margin_left = 1920.0
+margin_top = 1080.0
+margin_right = 3840.0
+margin_bottom = 2160.0
+rect_pivot_offset = Vector2( 2242.06, 540 )
+texture = ExtResource( 1 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect6" type="TextureRect" parent="ParallaxLayer"]
+margin_top = 1080.0
+margin_right = 1920.0
+margin_bottom = 2160.0
+rect_pivot_offset = Vector2( 2242.06, 540 )
+texture = ExtResource( 1 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect7" type="TextureRect" parent="ParallaxLayer"]
+margin_top = -1080.0
+margin_right = 1920.0
+rect_pivot_offset = Vector2( 2242.06, 540 )
+texture = ExtResource( 1 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect8" type="TextureRect" parent="ParallaxLayer"]
+margin_left = 1920.0
+margin_top = -1080.0
+margin_right = 3840.0
+rect_pivot_offset = Vector2( 2242.06, 540 )
+texture = ExtResource( 1 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect9" type="TextureRect" parent="ParallaxLayer"]
+margin_left = 1920.0
+margin_right = 3840.0
+margin_bottom = 1080.0
+rect_pivot_offset = Vector2( 2242.06, 540 )
+texture = ExtResource( 1 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}

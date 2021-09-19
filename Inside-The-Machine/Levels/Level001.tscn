@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Levels/Background.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Levels/Level001.gd" type="Script" id=3]
 [ext_resource path="res://Nodes/Goal.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Enemies/EnemySpawner.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Nodes/DataSpawner.tscn" type="PackedScene" id=6]
 
 [node name="Level" type="Node2D"]
 script = ExtResource( 3 )
@@ -16,5 +17,7 @@ script = ExtResource( 3 )
 [node name="Goal" parent="." instance=ExtResource( 4 )]
 
 [node name="EnemySpawner" parent="." instance=ExtResource( 5 )]
+
+[node name="DataSpawner" parent="." instance=ExtResource( 6 )]
 
 [connection signal="body_shape_entered" from="Goal" to="Player" method="_on_Goal_body_shape_entered"]
